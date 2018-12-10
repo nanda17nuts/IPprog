@@ -5,12 +5,6 @@
 #include <math.h>
 using namespace cv;
 using namespace std;
-int IsValid(int x, int y,int rows,int cols)
-{
-	if(x<0||y<0||x>=rows||y>=cols)
-		return 0;
-	return 1;
-}
 int main(){
 	int x=10,y=10,z=10,sx[3][3]={-1,0,1,-2,0,2,-1,0,1},sy[3][3]={-1,-2,-1,0,0,0,1,2,1},a=0,b=0,p,q,d; float c=0; namedWindow("IMG",WINDOW_NORMAL);
 	createTrackbar("slider1","IMG",&x,100); 
